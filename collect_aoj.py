@@ -36,7 +36,7 @@ def add_record(entry):
   return row
 
 def get_problemId_list(user):
-  url = "https://judgeapi.u-aizu.ac.jp/submission_records/users/" + user + "?size=200"
+  url = "https://judgeapi.u-aizu.ac.jp/submission_records/users/" + user + "?size=2000"
   r = requests.get(url)
   if r.status_code != 200:
     return ''

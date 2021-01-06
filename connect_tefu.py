@@ -2,9 +2,18 @@ import os
 import sys
 sys.path.append('..')
 import collect_aoj
-import kotonoha
+# import kotonoha
 
-l_userId = ['tefu417']
+# 'tefu417', 'baron2', 'kuwaaaaaaaaaaaaaaaaa', 'kichi941', 'bal4u', 'cima', 'novel', 'tricom', 'tige', 
+# 'KubotaNoriko1230', 'pypy', 'HiroN', 'bs5lNkJ',
+# 'manaka', 'puyopop', 'RandyWaterhouse', 'yoheikikuta', 'tsuru_aji', 'bonoron', 'doorgod', 
+# 'Mackie', 'y1721', 'tkawata', 'peroon', 'leeav_ten', 'momiji6', 'meiadayz', 'yreb', 
+# 'misuta', 'n_knuu', 'mxg7y', 'rockbirds12', 'zywuwen', 'halfpennyworths',
+# 'SMON', 'shana', 'nananashi', 'vjudge2', 'takumiy', 'rune', 'PythonHolic', 
+# 'kira924age', 'sota1235', 'soutatahara', 'tappinasa', 'tallestorange', 'Sim0000', 
+# 'toyuzuko', 'jj1guj', 'nut5ch3st', 'Fulltea'
+userId = 'Fulltea'
+l_userId = ['nut5ch3st']
 l_problemId = [
   'ITP1_1_A', 
   'ITP1_1_B', 
@@ -212,6 +221,7 @@ def trans(l_userId, l_problemId):
       print('@@trans: ', userId, problemId)
 
 if __name__ == '__main__':
-  l_getProblemId = collect_aoj.get_problemId_list(l_userId[0]) # どこか別のところで事前にとらないとtrans 中のエラー時の回避が面倒
-  getCode(l_userId, l_getProblemId)
-  trans(l_userId, l_getProblemId)
+  l_getProblemId = collect_aoj.get_problemId_list(userId)
+  print(l_getProblemId)
+  # getCode(l_userId, l_getProblemId)
+  # trans(l_userId, l_getProblemId)
